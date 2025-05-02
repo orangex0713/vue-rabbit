@@ -1,6 +1,8 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// 只做联想机制
+import HelloWorld from '@/components/HelloWorld.vue'
+
 </script>
 
 <template>

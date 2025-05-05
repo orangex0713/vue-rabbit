@@ -32,6 +32,7 @@ onMounted(() => getBanner())
 .home-banner {
   width: 1240px;
   height: 500px;
+  // 绝对定位
   position: absolute;
   left: 0;
   top: 0;

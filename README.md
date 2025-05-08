@@ -11,7 +11,7 @@ Vue3 + Pinia + Element Plus
 
 ## 📌 注意事项
 - 测试账号：`12056258293  / hm#qd@23!`
-- 支付账号：`scobys4865@sandbox.com / 111111
+- 支付账号：`scobys4865@sandbox.com / 111111`
 - 部分数据为模拟数据，仅作演示用途
 - 建议使用Chrome/Firefox最新版访问
 

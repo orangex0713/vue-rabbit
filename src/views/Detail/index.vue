@@ -5,14 +5,20 @@ import { useRoute } from 'vue-router'
 import DetailHot from './components/DetailHot.vue'
 import { ElMessage } from 'element-plus'
 import { useCartStore } from '@/stores/cartStore'
+import { onBeforeRouteUpdate } from 'vue-router';
+
 const cartStore = useCartStore()
 const goods = ref({})
 const route = useRoute()
-const getGoods = async () => {
-  const res = await getDetail(route.params.id)
+const getGoods = async (id = route.params.id) => {
+  const res = await getDetail(id)
   goods.value = res.result
 }
 onMounted(() => getGoods())
+
+onBeforeRouteUpdate((to) => {
+  getGoods(to.params.id)
+})
 
 // sku规格被操作时
 let skuObj = {}
@@ -91,7 +97,7 @@ const addCart = () => {
                 </li>
                 <li>
                   <p>品牌信息</p>
-                  <p>{{ goods.brand.name }}</p>
+                  <p>{{ goods.brand?.name }}</p>
                   <p><i class="iconfont icon-dynamic-filling"></i>品牌主页</p>
                 </li>
               </ul>

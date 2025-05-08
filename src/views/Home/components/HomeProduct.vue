@@ -12,11 +12,13 @@ const getGoods = async() => {
 onMounted(() => getGoods())
 </script>
 
+
+
 <template>
   <div class="home-product">
     <HomePanel :title="cate.name" v-for="cate in goodsProduct" :key="cate.id">
       <div class="box">
-        <RouterLink class="cover" to="/">
+        <RouterLink class="cover" :to="`/category/${cate.id}`">
           <img v-img-lazy="cate.picture" />
           <strong class="label">
             <span>{{ cate.name }}馆</span>

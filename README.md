@@ -1,35 +1,19 @@
-# vue-rabbit
+# 🐇 欢迎体验「小兔鲜」项目 
 
-This template should help get you started developing with Vue 3 in Vite.
+## 🌟 项目简介
+「小兔鲜」是一个生鲜电商**前端**项目，包含完整的实现，主打生鲜商品在线选购、购物车、订单等核心功能。
 
-## Recommended IDE Setup
+## 🔗 项目地址
+**线上体验地址** ➡️ [http://43.136.122.239/](http://43.136.122.239/)  
+（2025年之内有效）
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🛠️ 技术栈
+Vue3 + Pinia + Element Plus
 
-## Customize configuration
+## 📌 注意事项
+- 测试账号：`12056258293  / hm#qd@23!`
+- 部分数据为模拟数据，仅作演示用途
+- 建议使用Chrome/Firefox最新版访问
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+欢迎提出宝贵建议！ ✨
+项目教程参考：B站 黑马程序员

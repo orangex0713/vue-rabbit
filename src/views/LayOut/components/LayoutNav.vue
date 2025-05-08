@@ -10,8 +10,11 @@ const confirm = () => {
 
   // 1.清楚用户信息
   userStore.clearUserInfo()
-  // 2.跳转登录页面
+  // 2.跳转登页面
   // router.push('/login')
+
+  // 2.跳转首面
+  router.push('/')
 
 }
 </script>

@@ -1,5 +1,7 @@
 <script setup>
 import { useCartStore } from '@/stores/cartStore'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const cartStore = useCartStore()
 
 // 单选回调
@@ -53,14 +55,14 @@ const allCheck = (selected) =>{
                 <p>&yen;{{ i.price }}</p>
               </td>
               <td class="tc">
-                <el-input-number v-model="i.count" />
+                <el-input-number v-model="i.count" :min = 1 />
               </td>
               <td class="tc">
                 <p class="f16 red">&yen;{{ (i.price * i.count).toFixed(2) }}</p>
               </td>
               <td class="tc">
                 <p>
-                  <el-popconfirm title="确认删除吗?" confirm-button-text="确认" cancel-button-text="取消" @confirm="delCart(i)">
+                  <el-popconfirm title="确认删除吗?" confirm-button-text="确认" cancel-button-text="取消" @confirm="cartStore.delCart(i.skuId)">
                     <template #reference>
                       <a href="javascript:;">删除</a>
                     </template>
@@ -72,7 +74,7 @@ const allCheck = (selected) =>{
               <td colspan="6">
                 <div class="cart-none">
                   <el-empty description="购物车列表为空">
-                    <el-button type="primary">随便逛逛</el-button>
+                    <el-button type="primary" @click="$router.push('/')">随便逛逛</el-button>
                   </el-empty>
                 </div>
               </td>

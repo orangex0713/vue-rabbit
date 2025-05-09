@@ -26,6 +26,8 @@ Vue3 + Pinia + Element Plus
 - 进入订单页后不能随意返回
 - 一些未实现交互功能的按钮
 
+## 🚀 部署教程
+该仓库详细部署指南请参考：[CSDN部署教程](https://blog.csdn.net/orange_xuan/article/details/147815421?fromshare=blogdetail&sharetype=blogdetail&sharerId=147815421&sharerefer=PC&sharesource=orange_xuan&sharefrom=from_link)
  
 欢迎提出宝贵建议！ ✨
 
